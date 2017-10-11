@@ -13,6 +13,7 @@ markupsafe = "==1.0"
 werkzeug = "==0.12.2"
 qrcode = "*"
 pillow = "*"
+colorama = "*"
 
 
 [dev-packages]
