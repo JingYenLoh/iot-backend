@@ -13,6 +13,10 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello, World!'
 
+"""Per table routing
+So Josh, this will take in an argument called table_id
+and route to a page (sample.html in this case)
+"""
 @app.route('/table/<int:table_id>')
 def show_menu(table_id=None):
     return render_template('sample.html', table_id=table_id)
