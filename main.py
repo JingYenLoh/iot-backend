@@ -25,3 +25,6 @@ and process something based on table number
 @app.route('/table/<int:table_id>')
 def show_menu(table_id=None):
     return render_template('sample.html', table_id=table_id)
+
+if __name__ == 'main':
+    app.run()
